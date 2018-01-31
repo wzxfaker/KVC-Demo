@@ -15,6 +15,7 @@
 		84073DC520205D8E00B84588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84073DC320205D8E00B84588 /* LaunchScreen.storyboard */; };
 		84073DCE20205DA400B84588 /* XPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 84073DCD20205DA400B84588 /* XPerson.m */; };
 		84073DD12020631300B84588 /* XAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 84073DD02020631300B84588 /* XAnimal.m */; };
+		84073DD420218AAB00B84588 /* XAcount.m in Sources */ = {isa = PBXBuildFile; fileRef = 84073DD320218AAB00B84588 /* XAcount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,10 @@
 		84073DCD20205DA400B84588 /* XPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPerson.m; sourceTree = "<group>"; };
 		84073DCF2020631300B84588 /* XAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAnimal.h; sourceTree = "<group>"; };
 		84073DD02020631300B84588 /* XAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAnimal.m; sourceTree = "<group>"; };
+		84073DD220218AAB00B84588 /* XAcount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAcount.h; sourceTree = "<group>"; };
+		84073DD320218AAB00B84588 /* XAcount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAcount.m; sourceTree = "<group>"; };
+		84073DD52021905000B84588 /* NSKVONotifying_XAcount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_XAcount.h; sourceTree = "<group>"; };
+		84073DD62021905000B84588 /* NSKVONotifying_XAcount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_XAcount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,10 @@
 				84073DCD20205DA400B84588 /* XPerson.m */,
 				84073DCF2020631300B84588 /* XAnimal.h */,
 				84073DD02020631300B84588 /* XAnimal.m */,
+				84073DD220218AAB00B84588 /* XAcount.h */,
+				84073DD320218AAB00B84588 /* XAcount.m */,
+				84073DD52021905000B84588 /* NSKVONotifying_XAcount.h */,
+				84073DD62021905000B84588 /* NSKVONotifying_XAcount.m */,
 				84073DBE20205D8E00B84588 /* Main.storyboard */,
 				84073DC120205D8E00B84588 /* Assets.xcassets */,
 				84073DC320205D8E00B84588 /* LaunchScreen.storyboard */,
@@ -163,6 +172,7 @@
 			files = (
 				84073DBD20205D8E00B84588 /* ViewController.m in Sources */,
 				84073DBA20205D8E00B84588 /* AppDelegate.m in Sources */,
+				84073DD420218AAB00B84588 /* XAcount.m in Sources */,
 				84073DB720205D8E00B84588 /* main.m in Sources */,
 				84073DCE20205DA400B84588 /* XPerson.m in Sources */,
 				84073DD12020631300B84588 /* XAnimal.m in Sources */,

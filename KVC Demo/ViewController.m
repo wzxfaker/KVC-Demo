@@ -12,6 +12,9 @@
 
 @interface ViewController ()
 
+/** <##> */
+@property (nonatomic, strong) XPerson *person;
+
 @end
 
 @implementation ViewController
@@ -29,6 +32,12 @@
     XPerson *person = [[XPerson alloc] init];
     NSLog(@"%@",[person valueForKey:@"age"]);//如果有该属性，则会调用-(CGFloat)age;方法获取
     NSLog(@"%@",[person valueForKey:@"name"]);//如果没有该属性，则会调用一系列相关方法，最后调用valueForUndefinedKey
+    //[person.acount setValue:@"666" forKey:@"balance"];
+    XAcount *acount = [[XAcount alloc] init];
+    acount.balance = 100;
+    person.acount = acount;
+    [person.acount addObserver:self forKeyPath:@"balance" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    _person = person;
     
     
     
@@ -40,8 +49,20 @@
     XAnimal *animal = [[XAnimal alloc] init];
     [animal setValue:@"tiger" forKey:@"name"];
     [animal printName];
+    
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    NSLog(@"变化了--%@",change);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.person.acount.balance = 666;
+}
+
+- (void)dealloc{
+    [self.person.acount removeObserver:self forKeyPath:@"balance"];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

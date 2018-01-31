@@ -10,6 +10,13 @@
 
 @implementation XPerson
 
+- (instancetype)init{
+    if (self = [super init]) {
+        self.acount.balance = 100;
+    }
+    return self;
+}
+
 //当对象调用valueForKey:@""方法时，如果有此属性就直接调用getter方法；如果没有的话就按照下边的顺序去调用方法，知道最后调用valueForUndefiendKey:@""方法
 /*
 - (NSString *)getName{
@@ -42,6 +49,10 @@
 - (id)valueForUndefinedKey:(NSString *)key{
     NSLog(@"%s",__func__);
     return @"X_zed";
+}
+
+- (void)setAcount:(XAcount *)acount{
+    _acount = acount;
 }
 
 @end

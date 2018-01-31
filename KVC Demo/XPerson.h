@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "XAcount.h"
 
 @interface XPerson : NSObject
 
 /** <##> */
 @property (nonatomic, assign) CGFloat age;
+/** <##> */
+@property (nonatomic, strong) XAcount *acount;
+
 
 @end
